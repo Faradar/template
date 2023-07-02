@@ -1,6 +1,4 @@
-/* File Source: https://github.com/eduardofierropro/Reset-CSS */
-
-/* Custom properties */
+/* ========== Reset Custom properties ========== */
 :root {
 	--primary-color: #393939;
 	--secondary-color: #ececec;
@@ -10,7 +8,7 @@
 	--secondary-type: Verdana;
 }
 
-/* (Optional) Dark mode adaptation */
+/* ========== (Optional) Dark mode adaptation ========== */
 @media (prefers-color-scheme: dark) {
 	:root {
 		--primary-color: #ececec;
@@ -18,7 +16,7 @@
 	}
 }
 
-/* Reset the margin and padding */
+/* ========== Reset the margin and padding ========== */
 * {
 	margin: 0;
 	padding: 0;
@@ -28,43 +26,34 @@
 	vertical-align: baseline;
 }
 
-/* Avoid problems with images */
+/* ========== Avoid problems with images ========== */
 img, picture, video, iframe, figure {
 	max-width: 100%;
 	width: 100%;
 	display: block;
-	/* Optional */
-	-o-object-fit: cover;
-		object-fit: cover;
-	/* Optional */
-	-o-object-position: center center;
-		object-position: center center;
 }
 
-/* Reset the links to function as boxes... */
+/* ========== Reset the links to function as boxes... ========== */
 a {
 	display: block;
-	text-decoration: none;
-	color: inherit;
-	font-size: inherit;
 }
 
-/* ... except those found in paragraphs */
+/* ========== ... except those found in paragraphs ========== */
 p a {
 	display: inline;
 }
 
-/* Remove the points from the <li> */
+/* ========== Remove the points from the <li> ========== */
 li {
 	list-style-type: none;
 }
 
-/* Set soft anchors */
+/* ========== Set soft anchors ========== */
 html {
 	scroll-behavior: smooth;
 }
 
-/* Deactivate default styles for the main text labels */
+/* ========== Deactivate default styles for the main text labels ========== */
 h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
 	font-size: 1em;
 	font-weight: inherit;
@@ -73,13 +62,12 @@ h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
 	color: inherit;
 }
 
-/* Avoid problems with the pseudo-elements of quotes */
+/* ========== Avoid problems with the pseudo-elements of quotes ========== */
 blockquote:before, blockquote:after, q:before, q:after {
-	content: "";
 	content: none;
 }
 
-/* Configure the text that we select */
+/* ========== Configure the text that we select ========== */
 ::-moz-selection {
 	background-color: var(--primary-color);
 	color: var(--secondary-color);
@@ -89,7 +77,7 @@ blockquote:before, blockquote:after, q:before, q:after {
 	color: var(--secondary-color);
 }
 
-/* Level typography and form placement problems */
+/* ========== Level typography and form placement problems ========== */
 form, input, textarea, select, button, label {
 	font-family: inherit;
 	font-size: inherit;
@@ -99,26 +87,22 @@ form, input, textarea, select, button, label {
 	background-color: transparent;
 	color: inherit;
 	display: block;
-	/* Optional */
-	-webkit-appearance: none;
-		-moz-appearance: none;
-			appearance: none;
 }
 
-/* Reset tables */
+/* ========== Reset tables ========== */
 table, tr, td {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
-/* Avoid problems with the SVG */
+/* ========== Avoid problems with the SVG ========== */
 svg {
 	width: 100%;
 	display: block;
 	fill: currentColor;
 }
 
-/* Configure the typography for the entire web */
+/* ========== Configure the typography for the entire web ========== */
 body {
 	min-height: 100vh;
 	font-size: 100%;
@@ -127,14 +111,4 @@ body {
 	background-color: var(--secondary-color);
 	/* Optional */
 	line-height: 1.4em;
-	/* Optional */
-	-webkit-hyphens: auto;
-		-ms-hyphens: auto;
-			hyphens: auto;
-	/* Optional */
-	font-smooth: always;
-	/* Optional */
-	-webkit-font-smoothing: antialiased;
-	/* Optional */
-	-moz-osx-font-smoothing: grayscale;
 }
